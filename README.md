@@ -23,7 +23,13 @@ This project demonstrates how to deploy a containerized Nginx web server using D
 docker compose up -d --build
 docker ps
 
+## Screenshots
 
+### Docker Container Running
+![Docker PS](screenshots/docker-ps.png)
+
+### Website Running on AWS EC2
+![Website](screenshots/webpage.png)
 
 
 
