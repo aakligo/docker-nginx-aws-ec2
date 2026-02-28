@@ -31,6 +31,11 @@ docker ps
 ### Website Running on AWS EC2
 ![Website](screenshots/webpage.png)
 
+Result
+Real DevOps project
+Visual proof
+Professional documentation
+
 
 
 
