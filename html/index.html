@@ -1,8 +1,53 @@
 <!doctype html>
-<html>
-<head><meta charset="UTF-8"><title>Docker Nginx on AWS</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Docker Nginx on AWS EC2</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+    .card { max-width: 900px; border: 1px solid #ddd; border-radius: 12px; padding: 22px; }
+    .muted { color: #666; }
+    code { background: #f5f5f5; padding: 2px 6px; border-radius: 6px; }
+    ul { margin-top: 8px; }
+  </style>
+</head>
 <body>
-  <h1>✅ Dockerized Nginx on AWS EC2</h1>
-  <p><b>Server:</b> mck-prod-web-01 (Docker container: nginx-web)</p>
+  <div class="card">
+    <h1>✅ Dockerized Nginx on AWS EC2</h1>
+    <p class="muted">McKesson Medical-Surgical (Enterprise Simulation)</p>
+
+    <h2>Server Info</h2>
+    <ul>
+      <li><b>Server:</b> <code>mck-prod-web-01</code></li>
+      <li><b>Container:</b> <code>nginx-web</code></li>
+      <li><b>Service:</b> <code>Nginx</code></li>
+      <li><b>Status:</b> <span id="status">Running</span></li>
+      <li><b>Time:</b> <span id="dt"></span></li>
+    </ul>
+
+    <h2>Project Purpose</h2>
+    <p>
+      This page is served from an Nginx container deployed on an AWS EC2 Ubuntu instance.
+      The project demonstrates Docker, Linux administration, and cloud deployment skills.
+    </p>
+
+    <h2>Planned Multi-Server Nodes</h2>
+    <ul>
+      <li><code>mck-prod-web-01</code> — Web (Nginx)</li>
+      <li><code>mck-prod-app-01</code> — Application</li>
+      <li><code>mck-prod-db-01</code> — Database</li>
+      <li><code>mck-prod-mon-01</code> — Monitoring</li>
+      <li><code>mck-prod-bkp-01</code> — Backups</li>
+    </ul>
+
+    <p class="muted">
+      Note: This is a project-based simulation (not an actual McKesson system).
+    </p>
+  </div>
+
+  <script>
+    document.getElementById("dt").textContent = new Date().toLocaleString();
+  </script>
 </body>
-</html>>
+</html>>>
