@@ -4,4 +4,9 @@ services:
     container_name: nginx-web
     ports:
       - "80:80"
-    restart: unless-stopped:wq
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
